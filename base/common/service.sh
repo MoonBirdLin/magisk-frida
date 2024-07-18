@@ -22,7 +22,4 @@ setprop persist.device_config.runtime_native.usap_pool_enabled false
 setprop sys.usap.enable false
 
 # restart on crash
-while true; do
-    frida-server
-    sleep 1
-done
+frida-server -D
